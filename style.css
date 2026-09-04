@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#0b0d12;color:#f4f6f8;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.navbar{max-width:1180px;margin:auto;padding:22px 28px;display:flex;align-items:center;justify-content:space-between}
+header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.82);backdrop-filter:blur(15px);border-bottom:1px solid #222731}
+.logo{font:700 25px 'Space Grotesk';letter-spacing:-1px}.logo span{color:#8cff66}
+.nav-links{display:flex;gap:30px;list-style:none;font-size:14px;color:#b9bec8}.nav-links a:hover{color:#8cff66}
+.menu-btn{display:none;background:none;border:0;color:white;font-size:25px}
+.hero{max-width:1180px;margin:auto;min-height:720px;padding:100px 28px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:60px}
+.eyebrow,.section-tag{color:#8cff66;font-size:12px;font-weight:700;letter-spacing:2px}
+.hero h1{font:700 clamp(55px,8vw,100px)/.95 'Space Grotesk';letter-spacing:-5px;margin:18px 0}
+.hero h1 span{color:#8cff66}
+.hero h2{font:500 22px 'Space Grotesk';color:#d8dce2;margin-bottom:18px}
+.intro{max-width:590px;color:#9da4af;font-size:17px}
+.buttons{display:flex;gap:14px;margin-top:32px}
+.btn{display:inline-block;padding:13px 21px;border-radius:8px;font-weight:700;border:1px solid #343943;cursor:pointer;font-family:inherit}
+.primary{background:#8cff66;color:#081006;border-color:#8cff66}.primary:hover{filter:brightness(.92)}
+.secondary{color:white}.secondary:hover{border-color:#8cff66;color:#8cff66}
+.hero-card{border:1px solid #2a2e37;border-radius:24px;padding:35px;background:linear-gradient(145deg,#151922,#0d0f14);box-shadow:0 30px 80px #0006}
+.avatar{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;margin:auto;background:#8cff66;color:#0b0d12;font:700 42px 'Space Grotesk';box-shadow:0 0 0 12px #8cff6615}
+.status{margin:30px 0 25px;text-align:center;color:#aab1bb;font-size:13px}.status span{display:inline-block;width:8px;height:8px;background:#8cff66;border-radius:50%;margin-right:7px}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #292e37}
+.mini-grid div{padding:17px;border-bottom:1px solid #292e37}.mini-grid div:nth-child(odd){border-right:1px solid #292e37}
+.mini-grid strong,.mini-grid small{display:block}.mini-grid small{color:#777f8c;font-size:11px}
+.section{max-width:1180px;margin:auto;padding:105px 28px}.alt{max-width:none;padding-left:max(28px,calc((100% - 1180px)/2));padding-right:max(28px,calc((100% - 1180px)/2));background:#10131a}
+.section h2{font:700 clamp(38px,5vw,64px)/1.05 'Space Grotesk';letter-spacing:-2px;margin:15px 0 42px}.section h2 span{color:#777f8c}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;color:#aeb5bf;font-size:18px;max-width:900px}
+.skills-grid,.projects-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.skills-grid article,.project{border:1px solid #292e37;border-radius:14px;padding:25px;background:#0d1016}.skills-grid b,.project span{color:#8cff66;font-size:12px}.skills-grid h3,.project h3{font:700 23px 'Space Grotesk';margin:35px 0 10px}.skills-grid p,.project p{color:#858d99;font-size:14px}.projects-grid{grid-template-columns:repeat(3,1fr)}.project{min-height:250px}.project em{display:inline-block;margin-top:25px;color:#8cff66;font-style:normal;font-size:12px}
+.contact{text-align:center}.contact>p:not(.section-tag){color:#929aa7;margin-bottom:25px}.message{color:#8cff66!important;min-height:25px;margin-top:15px}
+footer{border-top:1px solid #222731;text-align:center;padding:28px;color:#69717e;font-size:12px}
+@media(max-width:800px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#0b0d12;padding:20px 28px;flex-direction:column;gap:15px}.nav-links.show{display:flex}.hero{grid-template-columns:1fr;padding-top:70px}.hero-card{max-width:500px}.skills-grid{grid-template-columns:1fr 1fr}.projects-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:20px}}
+@media(max-width:500px){.hero h1{letter-spacing:-3px}.buttons{flex-direction:column}.skills-grid{grid-template-columns:1fr}.section{padding-top:75px;padding-bottom:75px}}
