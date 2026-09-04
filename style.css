@@ -34,3 +34,17 @@ header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.82);backdrop-f
 footer{border-top:1px solid #222731;text-align:center;padding:28px;color:#69717e;font-size:12px}
 @media(max-width:800px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#0b0d12;padding:20px 28px;flex-direction:column;gap:15px}.nav-links.show{display:flex}.hero{grid-template-columns:1fr;padding-top:70px}.hero-card{max-width:500px}.skills-grid{grid-template-columns:1fr 1fr}.projects-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:20px}}
 @media(max-width:500px){.hero h1{letter-spacing:-3px}.buttons{flex-direction:column}.skills-grid{grid-template-columns:1fr}.section{padding-top:75px;padding-bottom:75px}}
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
